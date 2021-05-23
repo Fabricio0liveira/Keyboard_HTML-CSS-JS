@@ -1,0 +1,80 @@
+* {
+    /*
+    margin: 0;
+    padding: 0; 
+    */
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #5555;
+}
+
+.teclado {
+    width: 1500px;
+    padding: 70px 15px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+}
+
+.oitava {
+    position: relative;
+    display: flex; /* Colocando as teclas um ao lado da outra */
+}
+
+.branca {
+    background-color: #fff;
+    width: 50px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.preta {
+    position: absolute;
+    background-color: #000;
+    width: 30px;
+    height: 160px;
+    border-radius: 5px;
+}
+
+[cs] {
+    left: 35px; /* Adicionando 50px a mais a cada tecla pelos calculos*/
+}
+
+[ds] {
+    left: 85px;
+}
+
+[fs] {
+    left: 185px;
+}
+
+[gs] {
+    left: 235px;
+}
+
+[as] {
+    left: 285px;
+}
+
+.selecionada {
+    background-color: rgb(200, 200, 200);
+    transition: .1s;
+}
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 30vh;
+}
+
+footer a {
+    text-decoration: none;
+}
